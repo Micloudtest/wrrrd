@@ -6,8 +6,6 @@ on init
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    install_keyring
-    setprop crypto.ready 1
 
 on boot
     mkdir /firmware
