@@ -3,8 +3,8 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 # Data
-/metadata              ext4      /dev/block/platform/bootdevice/by-name/metadata                  flags=backup=1;display="Metadata";wipeduringfactoryreset
-/cache                 ext4      /dev/block/bootdevice/by-name/cache                              flags=display="Cache";formattable;wipeduringfactoryreset
+/metadata              ext4    /dev/block/bootdevice/by-name/metadata                             flags=backup=1;display="Metadata";wipeduringfactoryreset
+/cache                 ext4    /dev/block/bootdevice/by-name/cache                                flags=display="Cache";formattable;wipeduringfactoryreset
 
 # Boot
 /boot                  emmc    /dev/block/bootdevice/by-name/boot                                 flags=display="Boot";backup=1;slotselect;flashimg=1
