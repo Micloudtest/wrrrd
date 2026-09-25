@@ -109,7 +109,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export OF_SKIP_MULTIUSER_FOLDERS_BACKUP="1"	
 		export FOX_REPLACE_TOOLBOX_GETPROP=1
 		export FOX_INSTALLER_DISABLE_AUTOREBOOT=1
-    export FOX_BUGGED_AOSP_ARB_WORKAROUND="1510672800" # Tue Nov 14 15:20:00 GMT 2017
+        export FOX_BUGGED_AOSP_ARB_WORKAROUND="1510672800" # Tue Nov 14 15:20:00 GMT 2017
 
 		# maximum permissible splash image size (in kilobytes); do *NOT* increase!
 		export OF_SPLASH_MAX_SIZE=130
