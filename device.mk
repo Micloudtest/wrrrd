@@ -20,10 +20,8 @@ PRODUCT_PACKAGES_ENG += \
     qcom_decrypt_fbe
 
 # Fastbootd
-TW_INCLUDE_FASTBOOTD := true
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
-    android.hardware.fastboot@1.0-impl-mock.recovery \
     fastbootd 
 
 # f2fs utilities
