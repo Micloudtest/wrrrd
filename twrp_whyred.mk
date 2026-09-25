@@ -21,7 +21,6 @@ PRODUCT_RELEASE_NAME := whyred
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
