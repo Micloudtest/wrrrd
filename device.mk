@@ -35,12 +35,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
-# f2fs utilities
-PRODUCT_PACKAGES += \
-    sg_write_buffer \
-    f2fs_io \
-    check_f2fs
-
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
     libicuuc \
