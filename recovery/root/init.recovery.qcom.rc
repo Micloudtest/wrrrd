@@ -12,3 +12,8 @@ on boot
     mount vfat /dev/block/bootdevice/by-name/modem /firmware ro shortname=lower uid=1000 gid=1000 dmask=227 fmask=337
 
     start health-hal-2-1
+
+    # Synaptics DSX RMI Node
+    chown system system /sys/devices/soc/c175000.i2c/i2c-1/1-0020/input/input2/wake_gesture
+    chmod 0644 /sys/devices/soc/c175000.i2c/i2c-1/1-0020/input/input2/wake_gesture
+    write /sys/devices/soc/c175000.i2c/i2c-1/1-0020/input/input2/wake_gesture 1
