@@ -61,7 +61,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	 	export OF_NO_MIUI_PATCH_WARNING=1
 
 	 	export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
-	 	export OF_DONT_PATCH_ON_FRESH_INSTALLATION=
+	 	export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
 
 		#Force FBE
 		export OF_FORCE_DATA_FORMAT_F2FS="1"
