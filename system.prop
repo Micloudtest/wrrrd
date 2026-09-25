@@ -1,5 +1,3 @@
-ro.secure=1
-ro.adb.secure=0
 ro.product.brand=xiaomi
 ro.product.name=whyred
 ro.product.device=whyred
