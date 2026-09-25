@@ -144,7 +144,6 @@ TW_DEFAULT_BRIGHTNESS := 500
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
-TARGET_USES_REMOTEPROC := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # Blacklist Goodix fingerprint. There's no reason to include this input in recovery
