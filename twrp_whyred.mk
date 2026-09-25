@@ -21,6 +21,10 @@ PRODUCT_RELEASE_NAME := whyred
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
+
+# Inherit from hardware-specific part of the product configuration
+$(call inherit-product, device/xiaomi/whyred/device.mk)
+
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
@@ -28,8 +32,5 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := whyred
 PRODUCT_NAME := twrp_whyred
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Redmi Note 5 Pro
+PRODUCT_MODEL := Redmi Note 5 Pro
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/xiaomi/whyred/device.mk)
