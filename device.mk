@@ -41,18 +41,21 @@ PRODUCT_PACKAGES += \
     f2fs_io \
     check_f2fs
 
-# Libraries
+# Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
-    android.hidl.base@1.0 \
     libicuuc \
+    android.hidl.base@1.0 \
     libion \
-    libxml2
+    libxml2 \
+    libpuresoftkeymasterdevice
 
+# Libraries
 TW_RECOVERY_ADDITIONAL_RELINK_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.base@1.0.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libicuuc.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.base@1.0.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
