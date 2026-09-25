@@ -61,16 +61,11 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	 	export OF_NO_MIUI_PATCH_WARNING=1
 
 	 	export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
-	 	export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
-	 	export OF_KEEP_DM_VERITY_FORCED_ENCRYPTION=1
-	 	export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
-	 	export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
-	 	export OF_FORCE_USE_RECOVERY_FSTAB=1
+	 	export OF_DONT_PATCH_ON_FRESH_INSTALLATION=
 
 		#Force FBE
 		export OF_FBE_METADATA_MOUNT_IGNORE=1
 		export OF_FORCE_DATA_FORMAT_F2FS="1"
-		export OF_NO_RELOAD_AFTER_DECRYPTION=1
 
 		# MediaTek
 		export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/bootdevice/by-name/recovery"
@@ -100,9 +95,6 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export FOX_USE_TAR_BINARY=1
 		export FOX_USE_SED_BINARY=1
 		export FOX_USE_XZ_UTILS=1
-
-		# legacy services for battery
-		export OF_USE_LEGACY_BATTERY_SERVICES=1
   
 		# all
 		export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
