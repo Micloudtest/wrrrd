@@ -4,10 +4,7 @@
 
 # Boot
 /boot                  emmc    /dev/block/bootdevice/by-name/boot                                 flags=display="Boot";backup=1;slotselect;flashimg=1
-/recovery              emmc    /dev/block/bootdevice/by-name/recovery                             flags=display="Recovery";slotselect;backup=1;flashimg=
-
-# Data
-/data			             f2fs    /dev/block/bootdevice/by-name/userdata                             flags=fileencryption=aes-256-xts:aes-256-cts:v2+emmc_optimized
+/recovery              emmc    /dev/block/bootdevice/by-name/recovery                             flags=display="Recovery";slotselect;backup=1;flashimg=1
 /cache                 ext4    /dev/block/bootdevice/by-name/cache                                flags=display="Cache";formattable;wipeduringfactoryreset
 
 # Persistent Firmware & Properties
