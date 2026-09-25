@@ -32,5 +32,5 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := whyred
 PRODUCT_NAME := twrp_whyred
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 5 Pro
+PRODUCT_MODEL := Redmi Note 5
 PRODUCT_MANUFACTURER := Xiaomi
