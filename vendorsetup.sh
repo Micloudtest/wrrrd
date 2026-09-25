@@ -68,13 +68,13 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	 	export OF_FORCE_USE_RECOVERY_FSTAB=1
 
 		#Force FBE
-    export OF_FBE_METADATA_MOUNT_IGNORE=1
+		export OF_FBE_METADATA_MOUNT_IGNORE=1
 		export OF_FORCE_DATA_FORMAT_F2FS="1"
-  	export OF_NO_RELOAD_AFTER_DECRYPTION=1
+		export OF_NO_RELOAD_AFTER_DECRYPTION=1
 
 		# MediaTek
 		export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/bootdevice/by-name/recovery"
-  	export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/bootdevice/by-name/boot"
+		export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/bootdevice/by-name/boot"
 		export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 		export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 		export FOX_RECOVERY_PRODUCT_PARTITION="/dev/block/mapper/product"
