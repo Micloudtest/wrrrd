@@ -123,14 +123,23 @@ BOARD_USES_METADATA_PARTITION := true
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
 
+ifneq ($(OF_HIDE_NOTCH),1)
+  # Configure Status bar icons for regular TWRP builds only
+    TW_DEVICE_VERSION := Whyred Tapin™
+    TW_STATUS_ICONS_ALIGN := center
+    TW_CUSTOM_CPU_POS := "290"
+    TW_CUSTOM_CLOCK_POS := "70"
+    TW_CUSTOM_BATTERY_POS := "790"
+endif
+
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 500
-
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
