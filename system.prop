@@ -6,4 +6,3 @@ ro.build.product=whyred
 sys.usb.controller=a800000.dwc3
 sys.usb.rndis.func.name=rndis_bam
 sys.usb.rmnet.func.name=rmnet_bam
-ro.crypto.volume.filenames_mode=aes-256-cts
