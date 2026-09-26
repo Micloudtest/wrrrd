@@ -58,9 +58,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 		export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
 	 	export OF_NO_MIUI_PATCH_WARNING=1
-
-	 	export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
-
+		
 		#Force FBE
 		export OF_FORCE_DATA_FORMAT_F2FS="1"
 
