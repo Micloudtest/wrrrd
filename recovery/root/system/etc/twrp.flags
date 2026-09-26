@@ -5,7 +5,6 @@
 # Boot
 /boot                  emmc    /dev/block/bootdevice/by-name/boot                                 flags=display="Boot";backup=1;slotselect;flashimg=1
 /recovery              emmc    /dev/block/bootdevice/by-name/recovery                             flags=display="Recovery";slotselect;backup=1;flashimg=1
-/metadata              ext4    /dev/block/bootdevice/by-name/metadata                             flags=display="Metadata";wipeduringfactoryreset
 /cache                 ext4    /dev/block/bootdevice/by-name/cache                                flags=display="Cache";formattable;wipeduringfactoryreset
 
 # Persistent Firmware & Properties
