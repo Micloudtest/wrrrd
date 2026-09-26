@@ -69,7 +69,6 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export FOX_RECOVERY_BOOT_PARTITION="/dev/block/bootdevice/by-name/boot"
 		export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 		export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
-		export FOX_RECOVERY_PRODUCT_PARTITION="/dev/block/mapper/product"
 
 		# Display / Leds
 		export OF_SCREEN_H="2400"
