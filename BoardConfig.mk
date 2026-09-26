@@ -132,7 +132,6 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
-TARGET_USES_REMOTEPROC := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # TWRP - Crypto
@@ -155,7 +154,6 @@ TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LIBRESETPROP := true
 
 # TWRP - Specifics
-TW_FRAMERATE := 60
 TW_THEME := portrait_hdpi
 TW_INCLUDE_NTFS_3G    := true
 TW_INCLUDE_FUSE_EXFAT := true
