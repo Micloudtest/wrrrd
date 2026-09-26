@@ -28,9 +28,11 @@ DEVICE_PATH := device/xiaomi/whyred
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-# Allow for building with minimal manifest
+# Build Hack
 BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_PREBUILT_ELF_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
+# Build
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Power
